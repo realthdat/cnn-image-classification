@@ -88,15 +88,15 @@ def maybe_read_summary_test_acc(summary_csv: str, model_name: str, run_dir: str)
     if not os.path.isfile(summary_csv):
         return None
     try:
-        df = pd.read_csv(summary_csv, header=None, names=["model","run_dir","test_acc"])
+        df = pd.read_csv(summary_csv, header=None, names=["model","run_dir","tr_acc"])
         df = df[df["model"].str.lower() == model_name.lower()]
         # nếu có nhiều dòng, ưu tiên dòng có run_dir trùng
         if run_dir:
             sel = df[df["run_dir"] == run_dir]
             if not sel.empty:
-                return float(sel.iloc[-1]["test_acc"])
+                return float(sel.iloc[-1]["tr_acc"])
         if not df.empty:
-            return float(df.iloc[-1]["test_acc"])
+            return float(df.iloc[-1]["tr_acc"])
         return None
     except Exception:
         return None

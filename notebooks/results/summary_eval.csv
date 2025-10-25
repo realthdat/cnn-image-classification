@@ -1,0 +1,4 @@
+model,run_dir,test_acc
+smallcnn,results\smallcnn\baseline,0.8133
+mobilenetv2,results\mobilenetv2_freeze\head_then_ft,0.9207
+resnet18,results\resnet18_freeze\head_then_ft,0.9277
