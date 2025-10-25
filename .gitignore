@@ -1,0 +1,55 @@
+# --- Python .gitignore ---
+
+# Bỏ môi trường ảo (virtual environments)
+.venv/
+venv/
+env/
+ENV/
+.venv311/
+
+
+# Bỏ các file biên dịch của Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Bỏ các file cài đặt package
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Bỏ các file tạm và cache
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.tmp
+*.bak
+
+# Bỏ các folder cache của pytest, coverage, mypy
+.pytest_cache/
+.coverage
+.tox/
+.mypy_cache/
+coverage.xml
+
+# Bỏ Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Bỏ file cấu hình IDE (VSCode, PyCharm, v.v.)
+.vscode/
+.idea/
+*.swp
+
+# Bỏ file môi trường
+.env
+*.env
+
+# Bỏ file dữ liệu lớn (nếu có)
+*.h5
+*.pt
+*.pth
+*.model
+*.ckpt

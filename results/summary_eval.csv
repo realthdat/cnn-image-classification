@@ -1,0 +1,4 @@
+model,run_dir,test_acc
+smallcnn,results\smallcnn\baseline,0.8133
+mobilenetv2,results\mobilenetv2_freeze\head_only,0.9060
+resnet18,results\resnet18\finetune_20e,0.9373
