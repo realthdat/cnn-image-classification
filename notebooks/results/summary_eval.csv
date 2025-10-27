@@ -1,4 +1,4 @@
-model,run_dir,test_acc
-smallcnn,results\smallcnn\baseline,0.8133
-mobilenetv2,results\mobilenetv2_freeze\head_then_ft,0.9207
-resnet18,results\resnet18_freeze\head_then_ft,0.9277
+model,val_acc,test_acc
+smallcnn,0.8133333333333334,0.8133333333333334
+mobilenetv2,0.9283333333333333,0.9206666666666666
+resnet18,0.933,0.9276666666666666
